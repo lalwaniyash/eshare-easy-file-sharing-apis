@@ -20,7 +20,7 @@ app.use('/files', require('./routes/show'));
 app.use('/files/download', require('./routes/download'));
 app.use('/', (req, res) => {
     res.send(`
-  <h1>Welcome to food-express-APIs</h1>
+  <h1>Welcome to file-sharing-APIs</h1>
   `);
 });
 
