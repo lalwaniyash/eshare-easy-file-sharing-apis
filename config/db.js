@@ -8,11 +8,6 @@ const mongoose = require("mongoose");
 //     }).catch((err) => console.log(`no connection`));
 // }
 
-const connectionParams = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-};
-
 function connectDB() {
     mongoose.connect(process.env.MONGO_CONNECTION_URL).then( ()=> {
         console.log(`connection successful`); 
